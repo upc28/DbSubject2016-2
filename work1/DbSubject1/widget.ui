@@ -125,7 +125,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="Ledi_major">
+   <widget class="QLineEdit" name="Ledit_major">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -135,7 +135,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="Ledi_name">
+   <widget class="QLineEdit" name="Ledit_name">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -145,7 +145,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="Ledi_gender">
+   <widget class="QLineEdit" name="Ledit_gender">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -192,11 +192,6 @@
     </rect>
    </property>
   </widget>
-  <zorder>Btn_load</zorder>
-  <zorder>Lab_path</zorder>
-  <zorder>groupBox</zorder>
-  <zorder>Ledi_gender</zorder>
-  <zorder>tableView</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

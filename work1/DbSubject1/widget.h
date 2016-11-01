@@ -2,6 +2,10 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include "QDataStream"
+#include "QCloseEvent"
+#include "qstandarditemmodel.h"
+#include "QStandardItem"
 
 namespace Ui {
 class Widget;
@@ -11,7 +15,8 @@ struct Student{
     QString name,subject;
     int num;
     bool male;
-    Information(int c,QString a,QString b,bool d){
+
+    Student(int c,QString a,QString b,bool d){
         name = a;subject = b;num = c;male = d;
     }
 };
@@ -30,10 +35,19 @@ public:
 private slots:
     void on_Btn_load_clicked();
 
+    void on_Btn_insert_clicked();
+
+    void on_Btn_query_clicked();
+
+    void deleteStudent();
+
 private:
     Ui::Widget *ui;
-    QLinkedList<Student> *linklist;
-    QString filename;
+    QList<Student*> *list;
+    QString fileName;
+    QStandardItemModel *caseModel;
+    bool saveFile();
+    void closeEvent(QCloseEvent *event);
 };
 
 #endif // WIDGET_H
