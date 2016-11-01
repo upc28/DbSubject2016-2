@@ -15,9 +15,9 @@ struct Student{
     QString name,subject;
     int num;
     bool male;
-
-    Student(int c,QString a,QString b,bool d){
-        name = a;subject = b;num = c;male = d;
+    QString reward;
+    Student(int c,QString a,QString b,bool d,QString e){
+        name = a;subject = b;num = c;male = d;reward = e;
     }
 };
 
@@ -40,6 +40,8 @@ private slots:
     void on_Btn_query_clicked();
 
     void deleteStudent();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::Widget *ui;

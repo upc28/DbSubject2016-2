@@ -39,13 +39,16 @@ public:
     QLineEdit *Ledit_gender;
     QPushButton *Btn_insert;
     QPushButton *Btn_query;
+    QPushButton *pushButton;
+    QLabel *label_5;
+    QLineEdit *Ledit_reward;
     QTableView *tableView;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QStringLiteral("Widget"));
-        Widget->resize(539, 341);
+        Widget->resize(539, 392);
         Btn_load = new QPushButton(Widget);
         Btn_load->setObjectName(QStringLiteral("Btn_load"));
         Btn_load->setGeometry(QRect(390, 20, 75, 25));
@@ -54,7 +57,7 @@ public:
         Lab_path->setGeometry(QRect(50, 20, 311, 25));
         groupBox = new QGroupBox(Widget);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(40, 50, 431, 131));
+        groupBox->setGeometry(QRect(40, 50, 431, 181));
         label = new QLabel(groupBox);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(20, 28, 54, 20));
@@ -85,13 +88,23 @@ public:
         Ledit_gender->setGeometry(QRect(280, 65, 113, 25));
         Btn_insert = new QPushButton(groupBox);
         Btn_insert->setObjectName(QStringLiteral("Btn_insert"));
-        Btn_insert->setGeometry(QRect(140, 95, 75, 30));
+        Btn_insert->setGeometry(QRect(190, 140, 75, 30));
         Btn_query = new QPushButton(groupBox);
         Btn_query->setObjectName(QStringLiteral("Btn_query"));
-        Btn_query->setGeometry(QRect(240, 95, 75, 30));
+        Btn_query->setGeometry(QRect(290, 140, 75, 30));
+        pushButton = new QPushButton(groupBox);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(90, 140, 75, 30));
+        label_5 = new QLabel(groupBox);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setGeometry(QRect(20, 110, 54, 20));
+        label_5->setAlignment(Qt::AlignCenter);
+        Ledit_reward = new QLineEdit(groupBox);
+        Ledit_reward->setObjectName(QStringLiteral("Ledit_reward"));
+        Ledit_reward->setGeometry(QRect(80, 107, 311, 25));
         tableView = new QTableView(Widget);
         tableView->setObjectName(QStringLiteral("tableView"));
-        tableView->setGeometry(QRect(40, 190, 431, 141));
+        tableView->setGeometry(QRect(40, 240, 431, 141));
 
         retranslateUi(Widget);
 
@@ -110,6 +123,8 @@ public:
         label_4->setText(QApplication::translate("Widget", "\346\200\247\345\210\253", 0));
         Btn_insert->setText(QApplication::translate("Widget", "\346\217\222\345\205\245", 0));
         Btn_query->setText(QApplication::translate("Widget", "\346\237\245\350\257\242", 0));
+        pushButton->setText(QApplication::translate("Widget", "\344\277\256\346\224\271", 0));
+        label_5->setText(QApplication::translate("Widget", "\345\245\226\345\212\261", 0));
     } // retranslateUi
 
 };

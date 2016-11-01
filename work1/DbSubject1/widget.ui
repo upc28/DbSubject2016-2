@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>539</width>
-    <height>341</height>
+    <height>392</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -45,7 +45,7 @@
      <x>40</x>
      <y>50</y>
      <width>431</width>
-     <height>131</height>
+     <height>181</height>
     </rect>
    </property>
    <property name="title">
@@ -158,8 +158,8 @@
    <widget class="QPushButton" name="Btn_insert">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>95</y>
+      <x>190</x>
+      <y>140</y>
       <width>75</width>
       <height>30</height>
      </rect>
@@ -171,8 +171,8 @@
    <widget class="QPushButton" name="Btn_query">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>95</y>
+      <x>290</x>
+      <y>140</y>
       <width>75</width>
       <height>30</height>
      </rect>
@@ -181,12 +181,51 @@
      <string>查询</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>140</y>
+      <width>75</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>修改</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>54</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>奖励</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Ledit_reward">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>107</y>
+      <width>311</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>190</y>
+     <y>240</y>
      <width>431</width>
      <height>141</height>
     </rect>
